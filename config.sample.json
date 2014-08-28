@@ -1,0 +1,15 @@
+{
+    "rules": [
+        {
+            "method"       : "GET",
+            "path"         : "/",
+            "content"      : "hello"
+        },
+        {
+            "method"       : "POST",
+            "path"         : "/api/message",
+            "content"      : "ok",
+            "content-type" : "text/json"
+        }
+    ]
+}
