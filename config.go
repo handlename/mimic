@@ -2,6 +2,7 @@ package mimic
 
 import (
 	"encoding/json"
+	"fmt"
 	"io/ioutil"
 )
 
@@ -39,4 +40,8 @@ func NewConfig(configPath string) (Config, error) {
 	}
 
 	return c, nil
+}
+
+func (r Rule) String() string {
+	return fmt.Sprintf("%s %s", r.Method, r.Path)
 }
