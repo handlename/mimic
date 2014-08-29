@@ -10,14 +10,19 @@ import (
 
 // Mimic is simple mock server for no-engineer.
 type Mimic struct {
+	port   int
 	config *Config
 	router *mux.Router
 }
 
 // NewMimic returns mimic instance.
-func NewMimic(c *Config) Mimic {
+func NewMimic(p int, c *Config) Mimic {
 	r := routing(c.Rules)
-	m := Mimic{c, r}
+	m := Mimic{
+		port:   p,
+		config: c,
+		router: r,
+	}
 
 	return m
 }
@@ -26,5 +31,5 @@ func NewMimic(c *Config) Mimic {
 func (m *Mimic) Start() {
 	http.Handle("/", m.router)
 	log.Printf("mimic server started at localhost:%d", m.config.Port)
-	http.ListenAndServe(fmt.Sprintf(":%d", m.config.Port), nil)
+	http.ListenAndServe(fmt.Sprintf(":%d", m.port), nil)
 }

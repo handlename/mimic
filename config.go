@@ -35,10 +35,6 @@ func NewConfig(configPath string) (Config, error) {
 		return Config{}, err
 	}
 
-	if c.Port == 0 {
-		c.Port = 3390
-	}
-
 	return c, nil
 }
 

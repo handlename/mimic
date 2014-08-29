@@ -22,6 +22,11 @@ func main() {
 			Value: "config.json",
 			Usage: "path to config file",
 		},
+		cli.IntFlag{
+			Name:  "port",
+			Value: 3390,
+			Usage: "port of mimic server",
+		},
 	}
 	app.Action = func(c *cli.Context) {
 		conf, err := NewConfig(c.String("config"))
@@ -30,7 +35,7 @@ func main() {
 			log.Fatalf("failed to load config: %s", err)
 		}
 
-		mimic := NewMimic(&conf)
+		mimic := NewMimic(c.Int("port"), &conf)
 		mimic.Start()
 	}
 	app.Run(os.Args)
