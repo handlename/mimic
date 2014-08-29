@@ -7,14 +7,11 @@ import (
 	"github.com/codegangsta/cli"
 )
 
-// Version of this application.
-var Version = "HEAD"
-
 func main() {
 	app := cli.NewApp()
 	app.Name = "mimic"
 	app.Usage = "Simple http mock server"
-	app.Version = Version
+	app.Version = "v0.1.0"
 	app.Author = "handlename"
 	app.Flags = []cli.Flag{
 		cli.StringFlag{
