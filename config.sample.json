@@ -8,7 +8,7 @@
         {
             "method"       : "POST",
             "path"         : "/api/message",
-            "content"      : "ok",
+            "content"      : "{\"status\":\"ok\"}",
             "content-type" : "text/json"
         }
     ]
