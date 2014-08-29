@@ -27,8 +27,31 @@ $ curl -X GET http://localhost:3390/hoge
 
 ## Installation
 
-Download binary for your environment from [release page](https://github.com/handlename/mimic/releases)
+Download binary for your environment from [release page](https://github.com/handlename/mimic/blob/master/config.sample.json)
 and place it in `$PATH` directory.
+
+## Usage
+
+### Commandline Options
+
+Please run `mimic --help` .
+
+### Configuration File
+
+```json
+{
+    "rules": [
+        {
+            "method"  : "GET",
+            "path"    : "/",
+            "content" : "hello"
+        }
+    ]
+}
+```
+
+[config.sample.json](https://github.com/handlename/mimic/blob/master/config.sample.json)
+will help you.
 
 ## Licence
 
