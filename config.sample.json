@@ -10,6 +10,12 @@
             "path"         : "/api/message",
             "content"      : "{\"status\":\"ok\"}",
             "content-type" : "text/json"
+        },
+        {
+            "method"       : "GET",
+            "path"         : "/api/message",
+            "content"      : "{\"message\":\"Hi, I'm mimic!!\"}",
+            "content-type" : "text/json"
         }
     ]
 }

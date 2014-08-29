@@ -11,7 +11,7 @@ func TestSuccess(t *testing.T) {
 		t.Errorf("error: %v", err)
 	}
 
-	if len(config.Rules) != 2 {
+	if len(config.Rules) != 3 {
 		t.Errorf("error: unexpected length of rule.")
 	}
 }
