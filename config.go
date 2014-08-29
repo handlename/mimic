@@ -1,4 +1,4 @@
-package mimic
+package main
 
 import (
 	"encoding/json"
