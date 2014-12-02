@@ -55,7 +55,7 @@ will help you.
 
 ## Licence
 
-[MIT](https://github.com/tcnksm/tool/blob/master/LICENCE)
+[MIT](https://github.com/handlename/mimic/blob/master/LICENCE)
 
 ## Author
 
