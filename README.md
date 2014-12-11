@@ -4,7 +4,7 @@ simple http mock server.
 
 ## Example
 
-`config.sample.json` is [here](https://github.com/handlename/mimic/config.sample.json).
+`config.sample.json` is [here](https://github.com/handlename/mimic/blob/master/config.sample.json).
 
 ```bash
 $ mimic --config=config.sample.json
@@ -27,7 +27,7 @@ $ curl -X GET http://localhost:3390/hoge
 
 ## Installation
 
-Download binary for your environment from [release page](https://github.com/handlename/mimic/blob/master/config.sample.json)
+Download binary for your environment from [release page](https://github.com/handlename/mimic/releases)
 and place it in `$PATH` directory.
 
 ## Usage
@@ -55,7 +55,7 @@ will help you.
 
 ## Licence
 
-[MIT](https://github.com/handlename/mimic/blob/master/LICENCE)
+[MIT](https://github.com/handlename/mimic/blob/master/LICENSE)
 
 ## Author
 
